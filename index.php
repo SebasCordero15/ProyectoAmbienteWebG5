@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#!">
-                <img src="\proyecto\logo.png" alt="Start Bootstrap"
+                <img src="\ProyectoAmbienteWebG5\logo.png" alt="Start Bootstrap"
                     style="height: auto; width: 100px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -97,7 +97,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="\proyecto\prod1.jpg" alt="..." />
+                        <img class="card-img-top" src="\ProyectoAmbienteWebG5\prod1.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -119,7 +119,7 @@
                     <div class="card h-100">
                     
                         <!-- Product image-->
-                        <img class="card-img-top" src="\proyecto\prod2.jpg" alt="..." />
+                        <img class="card-img-top" src="\ProyectoAmbienteWebG5\prod2.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -144,7 +144,7 @@
                     <div class="card h-100">
                         
                         <!-- Product image-->
-                        <img class="card-img-top" src="\proyecto\prod3.jpg" alt="..." />
+                        <img class="card-img-top" src="\ProyectoAmbienteWebG5\prod3.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -166,7 +166,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="\proyecto\prod4.jpg" alt="..." />
+                        <img class="card-img-top" src="\ProyectoAmbienteWebG5\prod4.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -190,7 +190,7 @@
                     <div class="card h-100">
                         
                         <!-- Product image-->
-                        <img class="card-img-top" src="\proyecto\prod5.jpg" alt="..." />
+                        <img class="card-img-top" src="\ProyectoAmbienteWebG5\prod5.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -212,7 +212,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="\proyecto\prod6.jpg" alt="..." />
+                        <img class="card-img-top" src="\ProyectoAmbienteWebG5\prod6.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -234,7 +234,7 @@
                     <div class="card h-100">
                         
                         <!-- Product image-->
-                        <img class="card-img-top" src="\proyecto\prod7.jpg" alt="..." />
+                        <img class="card-img-top" src="\ProyectoAmbienteWebG5\prod7.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -258,7 +258,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="\proyecto\prod8.jpg" alt="..." />
+                        <img class="card-img-top" src="\ProyectoAmbienteWebG5\prod8.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
