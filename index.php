@@ -43,19 +43,19 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" class="btn"
+                        <a href="agendarCita.php" class="btn"
                             style="background-color: #28a745; color: white; font-weight: bold; padding: 8px 16px; border-radius: 5px; margin-left: 10px; text-align: center;">
                             Agendar Cita
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" class="btn"
+                        <a href="buscarCita.php" class="btn"
                             style="background-color: #28a745; color: white; font-weight: bold; padding: 8px 16px; border-radius: 5px; margin-left: 10px; text-align: center;">
                             Buscar Cita
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#!" class="btn"
+                        <a href="buscarFactura.php" class="btn"
                             style="background-color: #28a745; color: white; font-weight: bold; padding: 8px 16px; border-radius: 5px; margin-left: 10px; text-align: center;">
                             Buscar Factura
                         </a>
