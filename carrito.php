@@ -65,7 +65,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false">Usuario</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
                             style="list-style-type: none; padding: 0; margin: 0;">
-                            <li><a class="dropdown-item" href="#!">Iniciar Sesion</a></li>
+                            <li><a class="dropdown-item" href="inicioSesion.php">Iniciar Sesion</a></li>
                             <li>
                                 <hr class="dropdown-divider" />
                             </li>
