@@ -14,109 +14,118 @@
 
 <body>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#!">
-                <img src="\ProyectoAmbienteWebG5\logo.png" alt="Start Bootstrap"
-                    style="height: auto; width: 100px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Citas</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Facturas</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#!">Usuarios</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="nav-link active" href="#!">Categorias</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="nav-link active" href="#!">Productos</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="agendarCita.php" class="btn"
-                            style="background-color: #28a745; color: white; font-weight: bold; padding: 8px 16px; border-radius: 5px; margin-left: 10px; text-align: center;">
-                            Agendar Cita
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="buscarCita.php" class="btn"
-                            style="background-color: #28a745; color: white; font-weight: bold; padding: 8px 16px; border-radius: 5px; margin-left: 10px; text-align: center;">
-                            Buscar Cita
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="buscarFactura.php" class="btn"
-                            style="background-color: #28a745; color: white; font-weight: bold; padding: 8px 16px; border-radius: 5px; margin-left: 10px; text-align: center;">
-                            Buscar Factura
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="d-flex align-items-center">
-                    <li class="nav-item dropdown me-3" style="list-style-type: none; margin: 0; padding: 0;">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Usuario</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
-                            style="list-style-type: none; padding: 0; margin: 0;">
-                            <li><a class="dropdown-item" href="inicioSesion.php">Iniciar Sesion</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#!">Cerrar Sesion</a></li>
-                        </ul>
-                    </li>
-                    <form class="d-flex">
-                    <a href="carrito.php" class="btn" style="color: #2e2b27; border-color: #2e2b27;">
-                        <i class="bi-cart-fill me-1" style="color: #2e2b27;"></i>
-                        Carrito
-                        <span id="cantidadCarrito" class="badge text-white ms-1 rounded-pill"
-                            style="background-color: #2e2b27;">
-                           0
-                        </span>
-                    </a>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?php include 'layout/nav.php'; ?>
 
       <!-- Contenido principal -->
-      <section class="container my-5">
-        <h2 class="mb-4 text-center">Agendar Cita</h2>
-        <form action="agendarCita.php" method="POST">
-            <div class="mb-3">
-                <label for="nombrePaciente" class="form-label">Nombre del Paciente</label>
-                <input type="text" class="form-control" id="nombrePaciente" name="nombrePaciente" placeholder="Ingrese su nombre completo">
+      <div class="modal fade" id="formularioModal" tabindex="-1" aria-labelledby="formularioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="formularioModalLabel">Formulario de Cita Médica</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <div class="mb-3">
-                <label for="cedulaPaciente" class="form-label">Cédula</label>
-                <input type="text" class="form-control" id="cedulaPaciente" name="cedulaPaciente" placeholder="Ingrese su número de cédula">
+            <div class="modal-body">                
+                <form action="procesar_formulario.php" method="post">
+                    <div class="form-group">
+                        <label for="fechaCita">Fecha de cita</label>
+                        <input type="date" id="fechaCita" name="fechaCita" class="form-control" placeholder="Selecciona la fecha de la cita">
+                    </div>
+                    <div class="form-group">
+                        <label for="horaCita">Hora de la cita</label>
+                        <select id="horaCita" name="horaCita" class="form-control">
+                            <option value="07:00">07:00 AM</option>
+                            <option value="07:30">07:30 AM</option>
+                            <option value="08:00">08:00 AM</option>
+                            <option value="08:30">08:30 AM</option>
+                            <option value="09:00">09:00 AM</option>
+                            <option value="09:30">09:30 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="10:30">10:30 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="11:30">11:30 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="12:30">12:30 PM</option>
+                            <option value="13:00">01:00 PM</option>
+                            <option value="13:30">01:30 PM</option>
+                            <option value="14:00">02:00 PM</option>
+                            <option value="14:30">02:30 PM</option>
+                            <option value="15:00">03:00 PM</option>
+                            <option value="15:30">03:30 PM</option>
+                            <option value="16:00">04:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Ingresa tu apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="genero">Género</label>
+                        <select id="genero" name="genero" class="form-control">
+                            <option value="" selected disabled>Selecciona tu género</option>
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctor">Doctor</label>
+                        <select id="doctor" name="doctor" class="form-control">
+                            <option value="" selected disabled>Selecciona un Doctor</option>
+                            <option value="dr1">Dr. Carlos Ramirez Mora</option>
+                            <option value="dr2">Dr. Manuel Pereira Solis</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Ingresa tu teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaNacimiento">Fecha de nacimiento</label>
+                        <input type="date" id="fechaNacimiento" name="fechaNacimiento" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección exacta</label>
+                        <textarea id="direccion" name="direccion" rows="4" class="form-control" placeholder="Ingresa tu dirección exacta"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Ingresa tu correo electrónico">
+                    </div>
+                    <br>
+                    <div class="container" >
+                <div class="row">
+                    <div class="col">
+                    <button type="button" class="btn btn-danger btn-lg btn-block" data-dismiss="modal" aria-label="Cerrar">Volver</button>
+                   </div>
+                    <div class="col">
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Enviar cita</button>
+                    </div>
+                </div>
+                
+                </div>
+
+                   
+                       
+                    
+                </form>
             </div>
-            <div class="mb-3">
-                <label for="fechaCita" class="form-label">Fecha de la Cita</label>
-                <input type="date" class="form-control" id="fechaCita" name="fechaCita">
-            </div>
-            <div class="mb-3">
-                <label for="horaCita" class="form-label">Hora de la Cita</label>
-                <input type="time" class="form-control" id="horaCita" name="horaCita">
-            </div>
-            <button type="submit" class="btn btn-success w-100">Agendar Cita</button>
-        </form>
-    </section>
+        </div>
+    </div>
+</div>
+
+    <script src="citas.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Farmacia Nacional de Homeopatía 2024</p>
-        </div>
-    </footer>
+    <?php include 'layout/footer.php'; ?>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
