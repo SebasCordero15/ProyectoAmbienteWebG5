@@ -25,8 +25,8 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="btn" style="background-color: #28a745; color: white; font-weight: bold; padding: 8px 16px; border-radius: 5px; margin-left: 10px; text-align: center;"
-                        data-toggle="modal" data-target="#formularioModal">
+                        <a href="agendarCita.php" class="btn" style="background-color: #28a745; color: white; font-weight: bold; padding: 8px 16px; border-radius: 5px; margin-left: 10px; text-align: center;"
+                        data-toggle="modal" data-target="#formularioModal" >
                         Agendar Cita
                         </a>
                     </li>

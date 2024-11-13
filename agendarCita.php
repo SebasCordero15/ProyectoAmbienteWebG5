@@ -17,11 +17,11 @@
     <?php include 'layout/nav.php'; ?>
 
       <!-- Contenido principal -->
-      <div class="modal fade" id="formularioModal" tabindex="-1" aria-labelledby="formularioModalLabel" aria-hidden="true">
+<div class="modal fade" id="formularioModal" tabindex="-1" aria-labelledby="formularioModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="formularioModalLabel">Formulario de Cita Médica</h5>
+                <h5 class="modal-title" id="formularioModalLabel" text-align: center>Formulario de Cita Médica</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -98,7 +98,7 @@
                     </div>
                     <br>
                     <div class="container" >
-                <div class="row">
+                <div class="row text-center">
                     <div class="col">
                     <button type="button" class="btn btn-danger btn-lg btn-block" data-dismiss="modal" aria-label="Cerrar">Volver</button>
                    </div>

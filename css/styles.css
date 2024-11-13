@@ -194,6 +194,7 @@ abbr[title] {
 }
 
 address {
+  
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
@@ -10841,3 +10842,29 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.modal-title {
+  color: #0b6b2f;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+
+.modal-body{
+  display: block;
+  padding: 10PX;
+  margin: 20PX;
+  text-align: left;
+  flex-direction: column;  
+  align-items: center;     
+  justify-content: center;
+}
+.close{
+  width: 6%;
+  margin: 10PX;
+  padding: 10px;
+  text-align: center;  
+}
+

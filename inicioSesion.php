@@ -57,9 +57,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="m-0">&copy; 2024 Farmacia Nacional de Homeopatía</p>
-    </footer>
+    <?php include 'layout/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
