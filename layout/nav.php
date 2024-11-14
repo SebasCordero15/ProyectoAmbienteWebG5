@@ -1,7 +1,7 @@
 <!-- nav.php -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#!">
+            <a class="navbar-brand" href="index.php">
                 <img src="\ProyectoAmbienteWebG5\logo.png" alt="Start Bootstrap"
                     style="height: auto; width: 100px;">
             </a>
