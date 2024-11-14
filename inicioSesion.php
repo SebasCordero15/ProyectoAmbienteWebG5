@@ -12,22 +12,11 @@
     <!-- Navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.php">
-                <img src="logo.png" alt="Logo Farmacia" style="height: auto; width: 100px;">
+        <a class="navbar-brand" href="index.php">
+                <img src="\ProyectoAmbienteWebG5\logo.png" alt="Start Bootstrap"
+                    style="height: auto; width: 100px;">
             </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="productos.php">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.php">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+            
         </div>
     </nav>
 
@@ -49,9 +38,6 @@
                         <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
                     </div>
                 </form>
-                <p class="text-center mt-3">
-                    ¿No tienes una cuenta? <a href="registro.php">Regístrate aquí</a>
-                </p>
             </div>
         </div>
     </div>

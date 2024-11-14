@@ -23,8 +23,8 @@
                 <input type="text" class="form-control" id="numeroFactura" name="numeroFactura" placeholder="Ingrese el número de factura">
             </div>
             <div class="mb-3">
-                <label for="fechaFactura" class="form-label">Fecha de la Factura</label>
-                <input type="date" class="form-control" id="fechaFactura" name="fechaFactura">
+                <label for="cedulaCliente" class="form-label">Cedula del Cliente</label>
+                <input type="number" class="form-control" id="cedula" name="cedula" placeholder="Ingrese su numero de Cédula">
             </div>
             <button type="submit" class="btn btn-primary w-100">Buscar Factura</button>
         </form>
